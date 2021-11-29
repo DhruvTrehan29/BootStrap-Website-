@@ -30,3 +30,26 @@ body{
 .navbar-dark{
     background-color: #512DAB;
 }
+.btn1{
+    background-color:rgb(255, 208, 0);
+    width: 143px;
+    border-radius: 6px;
+    height: 40px;
+}
+.tree{
+    text-decoration: none;
+    color:black;
+}
+.tree:hover{
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior:smooth;
+}
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
