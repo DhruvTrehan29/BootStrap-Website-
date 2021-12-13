@@ -71,3 +71,27 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+#loginmodal{
+    .modal-header{
+        background-color: $background-dark;
+        .close{
+            color: $background-pale;
+        }
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+}
+
+#reservetable{
+    .modal-header{
+        background-color: $background-dark;
+        .closeReserve{
+            color: $background-pale;
+        }
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+}

@@ -30,7 +30,7 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginmodal">
+                <a id="loginButton">
                     <span class="fa fa-sign-in">
 
                     </span>
@@ -43,14 +43,15 @@
     </nav>
     <div id="loginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-<div class="model-content">
-    <div class="modal-header" style="background-color: white;">
+<div class="model-content" style="background-color: #D1C4E9;">
+    <div class="modal-header" style="background-color: #512DA8;
+    color: floralwhite;">
         <h4 class="modal-title">Login</h4>
-        <button type="button" class="close" data-dismiss="modal">
+        <button type="button" class="close" style="color: floralwhite;">
             &times;
         </button>
     </div>
-    <div class="modal-body" style="background-color: white;">
+    <div class="modal-body">
         <form>
             <div class="form-row">
                 <div class="form-group col-sm-4">
@@ -71,7 +72,7 @@
             </div>
             <div class="form-row">
                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                <button type="submit" class="btn btn-primary btn-sm ml-1" style="background-color: #9575CD;border: #9575CD;">Sign in</button>        
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
             </div>
         </form>
     </div>
@@ -94,22 +95,22 @@
                      data-placement="top"
                      title="or call us at 9560269206"
                      href="#see"> Reserve Table</a> -->
-                     <a  role="button" class="btn btn-block nav-link btn-warning"data-toggle="modal"
-                     data-target="#see"> Reserve Table</a>
+                     <a  role="button" class="btn btn-block nav-link btn-warning" id="reserveButton"
+                     title="Or Call us at +852 12345678"> Reserve Table</a>
                      
                  </div>
             </div>
         </div>
         <div id="see" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
-    <div class="model-content"style="background-color: white;">
-        <div class="modal-header" style="background-color: white;">
-            <h4 class="modal-title" style="color: black;">Reserve a Table</h4>
-            <button type="button" class="close" data-dismiss="modal">
+    <div class="model-content"style="background-color:#D1C4E9;">
+        <div class="modal-header" style= "background-color: #512DA8;" >
+            <h4 class="modal-title" style="color: floralwhite;">Reserve a Table</h4>
+            <button type="button" class="close" style="color:floralwhite">
                 &times;
             </button>
         </div>
-        <div class="modal-body" style="background-color: white;">
+        <div class="modal-body">
             <form>
             <div class="form-group row" style="color: black;">
                 <label for="firstname" class="col-md-2 col-form-label">Number<br>of Guests</label>
@@ -412,28 +413,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('#mycarousel').carousel({interval:2000});
-        $('#carouselButton').click(function(){
-            if($('#carouselButton').children('span').hasClass('fa-pause')){
-                $('#mycarousel').carousel('pause');
-                $('#carouselButton').children('span').removeClass('fa-pause')
-                $('#carouselButton').children('span').addClass('fa-play')
-            }
-else if($('#carouselButton').children('span').hasClass('fa-play')){
-                $('#mycarousel').carousel('cycle');
-                $('#carouselButton').children('span').removeClass('fa-play')
-                $('#carouselButton').children('span').addClass('fa-pause')
-            }
-        });
-        });
-</script>
-<!-- <script>
-//     $(document).ready(function(){
-// $('[data-toggle-"tooltip"]').tooltip();
-//     });
-// </script> -->
+<script src="JS/script.js"></script>
 </body>
 
 </html>
